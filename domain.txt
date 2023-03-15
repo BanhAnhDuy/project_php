@@ -1,0 +1,10 @@
+<VirtualHost *:80>	
+    DocumentRoot "C:/xampp/htdocs/project_web" 
+    ServerName localhost
+    # Set access permission 
+    <Directory "C:/xampp/htdocs/project_web"> 
+	Options Indexes FollowSymLinks Includes ExecCGI
+	AllowOverride All
+	Require all granted
+    </Directory>
+</VirtualHost>
